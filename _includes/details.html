@@ -1,0 +1,15 @@
+
+<table>
+<tr><th>IP Address</th><td>{{page.ip}}</td></tr>
+<tr><th>Manufacturer</th><td>{{page.manufacturer}}</td></tr>
+<tr><th>Model</th><td>{{page.model}}</td></tr>
+<tr><th>Serial</th><td>{{page.serial}}</td></tr>
+<tr><th>OS</th><td>{{page.os}}</td></tr>
+<tr><th>Processor</th><td>{{page.processor}}</td></tr>
+<tr><th>Total Threads</th><td>{{page.threads}}</td></tr>
+<tr><th>Memory</th><td>{{page.memory}}</td></tr>
+<tr><th>Disks</th><td><ul>{% for disk in page.disks %} <li>{{disk}}</li> {% endfor %}</ul></td></tr>
+<tr><th>Location</th><td>{{page.location}}</td></tr>
+</table>
+
+{{page.notes}}

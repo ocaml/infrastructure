@@ -1,0 +1,19 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
+{% assign pools = "linux-x86_64,linux-ppc64,linux-arm64,windows-x86_64,linux-s390x" | split: ',' %}
+{% for pool in pools %}
+
+- {{pool}}
+{%- for item in site.machines -%}
+{% if item.pool == pool %}
+  * {{item.name}} ({{item.manufacturer}} {{item.model}}): {{item.threads}} threads
+{%- endif -%}
+{%- endfor -%}
+
+{% endfor %}
+
