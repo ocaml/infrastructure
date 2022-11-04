@@ -1,5 +1,5 @@
 ---
-title: Relocating Ocaml.org
+title: Relocating OCaml.org
 layout: post
 ---
 
