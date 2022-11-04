@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "Machine with no thread count"
 ---
 

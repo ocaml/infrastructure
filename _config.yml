@@ -30,6 +30,7 @@ plugins:
 
 header_pages:
   - about.md
+  - machines.md
   - by-location.md
 
 # Exclude from processing.

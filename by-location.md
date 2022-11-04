@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Machines by Location"
+title: "By Location"
 permalink: /location/
 ---
 
