@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Machines
 ---
 
@@ -15,7 +14,7 @@ title: Machines
 {% for item in site.machines %}
 {% if item.pool == nil %}
 <tr>
-<td><a href="/machines/{{item.name}}.html">{{item.name}}</a></td>
+<td><a href="/{{item.path | replace: "_machines", "machines" | replace: ".md", ".html"}}">{{item.name}}</a></td>
 <td>{{item.manufacturer}} {{item.model}}</td>
 <td>{{item.os}}</td>
 <td>{{item.threads}}</td>
@@ -42,7 +41,7 @@ title: Machines
 {% for item in site.machines %}
 {% if item.pool == pool %}
 <tr>
-<td><a href="/machines/{{item.name}}.html">{{item.name}}</a></td>
+<td><a href="/{{item.path | replace: "_machines", "machines" | replace: ".md", ".html"}}">{{item.name}}</a></td>
 <td>{{item.manufacturer}} {{item.model}}</td>
 <td>{{item.os}}</td>
 <td>{{item.threads}}</td>

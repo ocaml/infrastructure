@@ -6,7 +6,6 @@ serial: 5XGLV02
 os: Ubuntu 18.04.2
 location: Caelum
 notes: Doesn't appear to be doing anything
-layout: page
 processor: 'Intel(R) Xeon(R) CPU E3-220 v3 @ 3.10GHz'
 threads: 4
 ---

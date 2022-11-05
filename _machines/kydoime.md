@@ -13,7 +13,6 @@ pool: linux-arm64
 disks:
   - 900GB NVMe
   - 2 x 3.5TB NVMe
-layout: page
 ---
 {% include details.html %} 
 

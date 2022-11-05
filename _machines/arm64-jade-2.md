@@ -13,7 +13,6 @@ notes: Cluster worker
 pool: linux-arm64
 disks:
   - 2 x 900GB NVMe
-layout: page
 ---
 {% include details.html %} 
 

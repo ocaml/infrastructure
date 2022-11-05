@@ -11,7 +11,6 @@ disks:
   - 400GB SSD
   - 400GB SSD
   - 1.6TB NVMe
-layout: page
 ---
 {% include details.html %} 
 

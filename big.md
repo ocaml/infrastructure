@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Machines where nproc > 50"
 ---
 

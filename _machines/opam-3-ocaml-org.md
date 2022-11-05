@@ -7,7 +7,6 @@ model: VM
 threads: 2
 location: AWS
 notes: ocurrent/opam.ocaml.org
-layout: page
 ---
 {% include details.html %} 
 

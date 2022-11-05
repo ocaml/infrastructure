@@ -11,7 +11,6 @@ processor: 'Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz'
 threads: 4
 disks:
   - 1TB
-layout: page
 ---
 {% include details.html %} 
 

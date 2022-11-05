@@ -9,7 +9,6 @@ threads: 128
 location: Caelum
 notes: Cluster worker
 pool: linux-x86_64
-layout: page
 processor: 'AMD EPYC 7551 32-Core Processor'
 ---
 {% include details.html %} 

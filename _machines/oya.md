@@ -7,7 +7,6 @@ threads: 128
 location: Caelum
 notes: Cluster worker
 pool: linux-ppc64
-layout: page
 processor: 'POWER9, altivec supported'
 ---
 {% include details.html %} 

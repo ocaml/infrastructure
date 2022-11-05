@@ -1,6 +1,5 @@
 ---
 name: ci.mirage.io
-layout: page
 threads: 8
 model: QuantaMicro X10E-9N
 manufacturer: Quanta Cloud Technology Inc.

@@ -2,7 +2,6 @@
 name: carpenter
 notes: Dead
 location: Caelum
-layout: page
 manufacturer: SiFive
 model: U74-MC
 processor: RISC-V U74

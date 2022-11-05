@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "By Location"
 permalink: /location/
 ---
@@ -19,7 +18,7 @@ permalink: /location/
 {% for item in site.machines %}
 {% if item.location contains location %}
 <tr>
-<td><a href="/machines/{{item.name}}.html">{{item.name}}</a></td>
+<td><a href="/{{item.path | replace: "_machines", "machines" | replace: ".md", ".html"}}">{{item.name}}</a></td>
 <td>{{item.manufacturer}} {{item.model}}</td>
 <td>{{item.threads}}</td>
 <td>{{item.notes}}</td>

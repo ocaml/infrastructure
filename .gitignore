@@ -1,0 +1,4 @@
+.*.swp
+_site
+Gemfile.lock
+.sass-cache

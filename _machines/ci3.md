@@ -7,7 +7,6 @@ os: Debian Buster
 threads: 4
 location: Scaleway
 notes: ci3.ocamllabs.io - ocluster scheduler
-layout: page
 serial: 7NDNYQ2
 processor: 'AMD EPYC 7401P 24-Core Processor'
 ---

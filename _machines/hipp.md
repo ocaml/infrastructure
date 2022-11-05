@@ -12,7 +12,6 @@ pool: linux-x86_64
 disks:
   - 800GB SSD
   - 1.6TB NVMe
-layout: page
 serial: DLDWGL2
 processor: 'Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz'
 ---

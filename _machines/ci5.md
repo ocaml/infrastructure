@@ -1,6 +1,5 @@
 ---
 name: ci5
-layout: page
 threads: 4
 model: Virtual
 notes: ocurrent/ci.ocamllabs.io-deployer aka deploy.ci.ocaml.org

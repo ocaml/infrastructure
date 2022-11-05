@@ -2,7 +2,6 @@
 name: aello
 notes: Anil is using this for mulitcore hacking - ask in September 2022
 location: Caelum
-layout: page
 serial: DLDYGL2
 manufacturer: Dell
 model: PowerEdge R630

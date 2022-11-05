@@ -6,7 +6,6 @@ location: Equinix
 notes: ocurrent/v3.ocaml.org-server aka www.ocaml.org.  Machine called `ocaml-www-2` at Equinix
 manufacturer: Supermicro
 model: SYS-2028BT-HNC0R+
-layout: page
 threads: 48
 processor: 'Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz'
 disks:

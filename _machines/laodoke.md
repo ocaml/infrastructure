@@ -8,7 +8,6 @@ threads: 72
 location: Caelum
 notes: Cluster worker
 pool: linux-x86_64
-layout: page
 serial: DLDSGL2
 processor: 'Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz'
 ---

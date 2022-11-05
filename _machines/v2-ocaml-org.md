@@ -6,7 +6,6 @@ location: Scaleway
 notes: ocurrent/v2.ocaml.org
 manufacturer: Scaleway
 model: VM
-layout: page
 threads: 4
 processor: AMD EPYC 7282 16-Core Processor
 disks:

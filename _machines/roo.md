@@ -11,7 +11,6 @@ disks:
   - 256GB SSD
   - 1TB
   - 1TB
-layout: page
 ---
 {% include details.html %} 
 

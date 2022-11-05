@@ -13,18 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Inventory
+title: OCaml Infrastructure
 email: mark@tarides.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Hardware inventory
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: mtelvers
-github_username:  mtelvers
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
 
@@ -48,4 +44,32 @@ header_pages:
 collections:
   machines:
     output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      nav: main
+      sidebar:
+        nav: left
+  - scope:
+      type: "machines"
+    values:
+      layout: single
+      sidebar:
+        nav: by-use
+  - scope:
+      path: "by-use"
+    values:
+      layout: single
+      sidebar:
+        nav: by-use
+  - scope:
+      path: "by-location"
+    values:
+      layout: single
+      sidebar:
+        nav: by-location
+
 

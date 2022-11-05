@@ -9,7 +9,6 @@ model: PowerEdge R630
 threads: 72
 ip: 128.232.124.233
 processor: 'Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz'
-layout: page
 ---
 {% include details.html %} 
 

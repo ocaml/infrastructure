@@ -1,0 +1,48 @@
+main:
+  - title: Machines
+    url: /by-use/general
+  - title: By Location
+    url: /by-location/caelum
+
+left:
+  - title: www.ocaml.org
+    url: www-ocaml-org
+
+by-use:
+  - title: General
+    url: /by-use/general
+  - title: Worker Pools
+    children:
+      - title: Linux-x86_64
+        url: /by-use/linux-x86_64
+      - title: Linux-arm64
+        url: /by-use/linux-arm64
+      - title: Linux-ppc64
+        url: /by-use/linux-ppc64
+      - title: Windows-x86_64
+        url: /by-use/windows-x86_64
+      - title: Linux-s390x
+        url: /by-use/linux-s390x
+      - title: Linux-riscv64
+        url: /by-use/linux-riscv64
+      - title: MacOS-x86_64
+        url: /by-use/macos-x86_64
+      - title: MacOS-arm64
+        url: /by-use/macos-arm64
+
+by-location:
+  - title: Locations
+    children:
+      - title: Caelum
+        url: /by-location/caelum
+      - title: Equinix
+        url: /by-location/equinix
+      - title: Scaleway
+        url: /by-location/scaleway
+      - title: AWS
+        url: /by-location/aws
+      - title: Custodian
+        url: /by-location/custodian
+      - title: Marist College
+        url: /by-location/marist-college
+

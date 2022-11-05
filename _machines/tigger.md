@@ -7,7 +7,6 @@ model: h8qg6/h8qgi
 threads: 48
 memory: 64GB
 processor: AMD Opteron Processor 6344
-layout: page
 disks:
   - 64GB SSD
   - 1TB

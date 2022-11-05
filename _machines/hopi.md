@@ -7,7 +7,6 @@ manufacturer: Dell
 model: PowerEdge R7425
 os: Ubuntu 22.04
 location: Caelum
-layout: page
 ---
 {% include details.html %} 
 

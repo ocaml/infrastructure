@@ -1,6 +1,5 @@
 ---
 name: ainia
-ip:
 manufacturer: Avantek
 model: Ampere(TM) Mt Snow
 os: Ubuntu 22.04
@@ -13,7 +12,6 @@ pool: linux-arm64
 disks:
   - 900GB NVMe
   - 2 x 3.5TB NVMe
-layout: page
 ---
 {% include details.html %} 
 

@@ -6,7 +6,6 @@ os: Ubuntu 18.04
 threads: 128
 location: Caelum
 notes: Irmin Team
-layout: page
 serial: 7NDLYQ2
 ssh: mte24@comanche.ocamllabs.io
 ---

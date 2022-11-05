@@ -9,7 +9,6 @@ threads: 72
 location: Caelum
 notes: Cluster worker
 pool: linux-x86_64
-layout: page
 ---
 {% include details.html %} 
 

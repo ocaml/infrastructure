@@ -9,7 +9,6 @@ threads: 176
 location: Caelum
 notes: Cluster worker
 pool: linux-ppc64
-layout: page
 disks:
   - 500GB NVMe
   - 1.8TB NVMe

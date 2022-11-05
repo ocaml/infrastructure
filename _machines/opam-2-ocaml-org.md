@@ -6,7 +6,6 @@ manufacturer: AWS
 model: VM
 location: AWS
 notes: opam.ocaml.org
-layout: page
 ---
 {% include details.html %} 
 

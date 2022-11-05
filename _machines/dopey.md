@@ -7,7 +7,6 @@ os:
 threads: 8
 location: Caelum
 notes: Console ports for mini-itx
-layout: page
 ---
 {% include details.html %} 
 

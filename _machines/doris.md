@@ -8,7 +8,6 @@ threads: 256
 location: Caelum
 notes: Cluster worker
 pool: linux-x86_64
-layout: page
 serial: G26L6L3
 disks:
   - 400GB SSD
