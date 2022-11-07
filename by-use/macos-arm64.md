@@ -1,5 +1,5 @@
 ---
-title: MacOS-x86_64
+title: MacOS-arm64
 ---
 
 {% include pool-table.html %} 
