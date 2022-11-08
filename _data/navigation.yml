@@ -4,7 +4,7 @@ main:
   - title: By Location
     url: /by-location/caelum
   - title: By IP
-    url: /by-ip/128.232.96
+    url: /by-ip/128.232
 
 left:
   - title: www.ocaml.org
