@@ -1,6 +1,7 @@
 ---
 name: spring
 ip: 128.232.124.188
+fqdn: spring.ocamllabs.io
 model: Super Server
 os: Ubuntu 20.04
 threads: 8

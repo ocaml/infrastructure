@@ -1,6 +1,7 @@
 ---
-name: staging.ocaml.org
+name: staging
 ip: 51.159.79.64
+fqdn: staging.ocaml.org
 os: Ubuntu 20.04.2
 location: Scaleway
 notes: ocurrent/ocaml.org

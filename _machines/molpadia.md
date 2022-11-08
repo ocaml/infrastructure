@@ -1,6 +1,7 @@
 ---
 name: molpadia
-ip:
+ip: 128.232.124.172
+fqdn: molpadia.ocamllabs.io
 manufacturer: Avantek
 model: Ampere(TM) Mt Snow
 os: Ubuntu 22.04

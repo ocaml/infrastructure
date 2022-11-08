@@ -1,6 +1,7 @@
 ---
 name: hipp
 ip: 128.232.124.201
+fqdn: hipp.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R630
 os: Ubuntu 22.04

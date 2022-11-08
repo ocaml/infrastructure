@@ -1,6 +1,7 @@
 ---
 name: armyofdockerness
-ip: 
+ip:
+fqdn: armyofdockerness.ocamllabs.io
 model: 
 os: 
 threads: 

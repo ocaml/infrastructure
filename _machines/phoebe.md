@@ -1,6 +1,7 @@
 ---
 name: phoebe
 ip: 128.232.124.231
+fqdn: phoebe.ocamllabs.io
 manufacturer: Dell
 serial: DLDTGL2
 model: PowerEdge R630

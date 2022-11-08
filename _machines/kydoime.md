@@ -1,6 +1,7 @@
 ---
 name: kydoime
-ip:
+ip: 128.232.124.230
+fqdn: kydoime.ocamllabs.io
 manufacturer: Avantek
 model: Ampere(TM) Mt Snow
 os: Ubuntu 22.04

@@ -1,6 +1,7 @@
 ---
 name: winter
 ip: 128.232.124.181
+fqdn: winter.ocamllabs.io
 model: Super Server
 os: Ubuntu 18.04
 threads: 16

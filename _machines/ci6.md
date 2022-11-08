@@ -1,5 +1,7 @@
 ---
 name: ci6
+ip: 51.15.222.237
+fqdn: ci6.ocamllabs.io
 manufacturer: KVM
 model: VM
 location: Scaleway

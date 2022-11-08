@@ -1,6 +1,7 @@
 ---
 name: clete
 ip: 128.232.124.246
+fqdn: clete.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R630
 os: Ubuntu 22.04

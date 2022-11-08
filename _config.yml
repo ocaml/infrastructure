@@ -72,5 +72,11 @@ defaults:
       layout: single
       sidebar:
         nav: by-location
+  - scope:
+      path: "by-ip"
+    values:
+      layout: single
+      sidebar:
+        nav: by-ip
 
 

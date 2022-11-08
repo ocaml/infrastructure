@@ -1,0 +1,23 @@
+
+<table>
+<tr>
+<th>IP</th>
+<th>Machine</th>
+<th>Model</th>
+<th>Threads</th>
+<th>Notes</th>
+</tr>
+{% assign sorted_machines = site.machines | sort: 'ip' %}
+{% for item in sorted_machines %}
+{% if item.ip contains page.title %}
+<tr>
+<td>{{item.ip}}</td>
+<td><a href="/{{item.path | replace: "_machines", "machines" | replace: ".md", ".html"}}">{{item.name}}</a></td>
+<td>{{item.manufacturer}} {{item.model}}</td>
+<td>{{item.threads}}</td>
+<td>{{item.notes}}</td>
+</tr>
+{% endif %}
+{% endfor %}
+</table>
+

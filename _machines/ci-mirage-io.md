@@ -1,5 +1,7 @@
 ---
 name: ci.mirage.io
+ip:
+fqdn: ci-mirage-io.ocamllabs.io
 threads: 8
 model: QuantaMicro X10E-9N
 manufacturer: Quanta Cloud Technology Inc.

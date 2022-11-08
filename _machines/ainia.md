@@ -1,5 +1,7 @@
 ---
 name: ainia
+ip: 128.232.124.247
+fqdn: ainia.ocamllabs.io
 manufacturer: Avantek
 model: Ampere(TM) Mt Snow
 os: Ubuntu 22.04

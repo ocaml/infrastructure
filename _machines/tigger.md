@@ -1,5 +1,7 @@
 ---
 name: tigger
+ip: 128.232.124.211
+fqdn: tigger.ocamllabs.io
 notes: Powered off. Frequent reboots due to watchdog timer events.
 location: Caelum
 manufacturer: SuperMicro

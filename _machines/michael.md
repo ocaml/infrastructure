@@ -1,5 +1,7 @@
 ---
 name: michael
+ip:
+fqdn: michael.ocamllabs.io
 notes: Spare / Powered off
 location: Caelum
 manufacturer: Dell

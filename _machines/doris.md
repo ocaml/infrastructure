@@ -1,6 +1,7 @@
 ---
 name: doris
-ip: 128.232.124.25
+ip: 128.232.124.221
+fqdn: doris.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R6525
 os: Ubuntu 22.04

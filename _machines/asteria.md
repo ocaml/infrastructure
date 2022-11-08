@@ -1,6 +1,7 @@
 ---
 name: asteria
-ip: 128.232.124.24
+ip: 128.232.124.191
+fqdn: asteria.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R6525
 os: Ubuntu 22.04

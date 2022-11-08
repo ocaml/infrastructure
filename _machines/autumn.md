@@ -1,6 +1,7 @@
 ---
 name: autumn
 ip: 128.232.124.187
+fqdn: autumn.ocamllabs.io
 model: Super Server
 os: Ubuntu 18.04.3
 threads: 8

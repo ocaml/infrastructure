@@ -1,6 +1,7 @@
 ---
 name: summer
-ip: 128.232.124.186
+ip: 128.232.124.251
+fqdn: summer.ocamllabs.io
 model: Super Server
 os: Ubuntu 18.04
 threads: 16

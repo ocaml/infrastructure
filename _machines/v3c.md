@@ -1,5 +1,7 @@
 ---
 name: v3c
+ip:
+fqdn: v3c.ocaml.org
 notes: www.ocaml.org
 location: Scaleway
 manufacturer: Scaleway

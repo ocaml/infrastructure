@@ -1,6 +1,7 @@
 ---
-name: v3a.ocaml.org
+name: v3a
 ip: 147.75.80.123
+fqdn: v3a.ocaml.org
 os: Ubuntu 20.04.3
 location: Equinix
 notes: ocurrent/v3.ocaml.org-server aka www.ocaml.org.  Machine called `ocaml-www-2` at Equinix

@@ -1,5 +1,7 @@
 ---
 name: bremusa
+ip: 128.232.80.167
+fqdn: bremusa.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R630
 serial: DLDZGL2

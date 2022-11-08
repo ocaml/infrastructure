@@ -1,5 +1,7 @@
 ---
 name: eumache
+ip:
+fqdn: eumache.ocamllabs.io
 notes: docs.ci.ocaml.org and docs-data.ocaml.org
 location: Caelum
 os: Ubuntu 21.04

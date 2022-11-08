@@ -1,6 +1,7 @@
 ---
 name: okypous
-ip:
+ip: 128.232.124.241
+fqdn: okypous.ocamllabs.io
 manufacturer: Avantek
 model: Ampere(TM) Mt Snow
 os: Ubuntu 22.04

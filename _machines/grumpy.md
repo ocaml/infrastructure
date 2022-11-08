@@ -1,6 +1,7 @@
 ---
 name: grumpy
-ip: 128.232.124.238
+ip: 128.232.124.200
+fqdn: grumpy.ocamllabs.io
 model: PowerEdge R210 II
 os: Ubuntu 22.04
 threads: 4

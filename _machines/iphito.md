@@ -1,6 +1,7 @@
 ---
 name: iphito
-ip: 128.232.124.27
+ip: 128.232.124.244
+fqdn: iphito.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R6525
 os: Ubuntu 22.04

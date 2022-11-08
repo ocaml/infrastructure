@@ -1,5 +1,7 @@
 ---
 name: v3b
+ip:
+fqdn: v3b.ocaml.org
 notes: staging.ocaml.org
 location: Scaleway
 manufacturer: Scaleway

@@ -1,6 +1,7 @@
 ---
 name: dopey
-ip: 
+ip:
+fqdn: dopey.ocamllabs.io
 model: PowerEdge R210 II
 serial: CWGLV02
 os: 

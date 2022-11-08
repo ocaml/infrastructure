@@ -1,6 +1,7 @@
 ---
 name: apache
 ip: 128.232.124.234
+fqdn: apache.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R7425
 serial: 7NDNYQ2

@@ -1,6 +1,7 @@
 ---
 name: pisto
-ip: 128.232.124.162
+ip: 128.232.124.190
+fqdn: pisto.ocamllabs.io
 model: IBM Power System S812LC
 os: Ubuntu 21.10
 threads: 80

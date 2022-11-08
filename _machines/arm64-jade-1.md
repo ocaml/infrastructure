@@ -1,6 +1,7 @@
 ---
 name: arm64-jade-1
-ip:
+ip: 145.40.81.195
+fqdn: arm64-jade-1.ocamllabs.io
 manufacturer: Avantek
 model: Ampere(TM) Mt Jade
 os: Ubuntu 22.04

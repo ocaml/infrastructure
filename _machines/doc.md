@@ -1,6 +1,7 @@
 ---
 name: doc
-ip: 128.232.124.206
+ip: 128.232.124.240
+fqdn: doc.ocamllabs.io
 os: Ubuntu 22.04
 location: Caelum
 notes: BIND, netbootxyz and teleport

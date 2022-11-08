@@ -1,5 +1,7 @@
 ---
 name: leafcutter
+ip: 128.232.124.206
+fqdn: leafcutter.ocamllabs.io
 notes: 
 location: Caelum
 manufacturer: SiFive

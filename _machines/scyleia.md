@@ -1,6 +1,7 @@
 ---
 name: scyleia
 ip: 128.232.124.212
+fqdn: scyleia.ocamllabs.io
 manufacturer: Raptor
 model: Talos II
 serial: W1000194

@@ -1,6 +1,7 @@
 ---
 name: cree
-ip: 128.232.124.252
+ip: 128.232.124.236
+fqdn: cree.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R7425
 os: Ubuntu 22.04

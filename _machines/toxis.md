@@ -1,6 +1,7 @@
 ---
 name: toxis
 ip: 128.232.124.213
+fqdn: toxis.ocamllabs.io
 os: Ubuntu 20.04.2
 manufacturer: Dell
 model: PowerEdge R630

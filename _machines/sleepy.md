@@ -1,5 +1,7 @@
 ---
 name: sleepy
+ip:
+fqdn: sleepy.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R210 II
 serial: 5XGLV02

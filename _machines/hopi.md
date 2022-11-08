@@ -1,6 +1,7 @@
 ---
 name: hopi
-ip: 128.232.124.238
+ip: 128.232.124.183
+fqdn: hopi.ocamllabs.io
 notes: OCaml on Windows Desktops
 threads: 128
 manufacturer: Dell

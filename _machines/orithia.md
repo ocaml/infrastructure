@@ -1,6 +1,7 @@
 ---
 name: orithia
 ip: 128.232.124.217
+fqdn: orithia.ocamllabs.io
 manufacturer: Raptor
 model: Talos II
 serial: W1000194

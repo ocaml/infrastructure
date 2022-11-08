@@ -1,6 +1,7 @@
 ---
 name: prothoe
-ip: 128.232.124.237
+ip: 128.232.124.211
+fqdn: prothoe.ocamllabs.io
 model: IBM Power System S812LC
 os: Ubuntu 21.10
 threads: 80

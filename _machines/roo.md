@@ -1,5 +1,7 @@
 ---
 name: roo
+ip:
+fqdn: roo.ocamllabs.io
 notes: Benchmarking -- fermat.ocamllabs.io
 manufacturer: SuperMicro
 model: h8qg6/h8qgi

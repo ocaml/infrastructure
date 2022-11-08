@@ -1,6 +1,7 @@
 ---
 name: oya
-ip: 128.232.124.152
+ip: 128.232.124.161
+fqdn: oya.ocamllabs.io
 model: IBM PowerNV 9006-22P
 os: Ubuntu 22.04
 threads: 128

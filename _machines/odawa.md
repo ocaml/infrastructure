@@ -1,5 +1,7 @@
 ---
 name: odawa
+ip: 128.232.124.232
+fqdn: odawa.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R6525
 serial: 47B6KH3

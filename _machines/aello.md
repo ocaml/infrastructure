@@ -1,5 +1,7 @@
 ---
 name: aello
+ip:
+fqdn: aello.ocamllabs.io
 notes: Anil is using this for mulitcore hacking - ask in September 2022
 location: Caelum
 serial: DLDYGL2

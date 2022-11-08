@@ -1,6 +1,7 @@
 ---
 name: laodoke
 ip: 128.232.124.239
+fqdn: laodoke.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R630
 os: Ubuntu 22.04

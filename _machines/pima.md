@@ -1,6 +1,7 @@
 ---
 name: pima
 ip: 128.232.124.197
+fqdn: pima.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R7425
 os: Ubuntu 22.04

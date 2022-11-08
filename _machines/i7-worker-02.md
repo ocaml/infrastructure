@@ -1,5 +1,7 @@
 ---
 name: i7-worker-02
+ip:
+fqdn: i7-worker-02.ocamllabs.io
 model: Apple Mac Mini
 os: Monteray 12.6
 threads: 12
