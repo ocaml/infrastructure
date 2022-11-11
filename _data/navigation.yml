@@ -51,22 +51,22 @@ by-location:
 by-ip:
   - title: Subnets
     children:
-      - title: 128.232
+      - title: "128.232"
         url: /by-ip/128.232
-      - title: 136.144
+      - title: "136.144"
         url: /by-ip/136.144
-      - title: 147.75
+      - title: "147.75"
         url: /by-ip/147.75
-      - title: 148.100
+      - title: "148.100"
         url: /by-ip/148.100
-      - title: 163.172
+      - title: "163.172"
         url: /by-ip/163.172
-      - title: 212.47
+      - title: "212.47"
         url: /by-ip/212.47
-      - title: 51.159
+      - title: "51.159"
         url: /by-ip/51.159
-      - title: 54.146
+      - title: "54.146"
         url: /by-ip/54.146
-      - title: 54.224
+      - title: "54.224"
         url: /by-ip/54.224
 
