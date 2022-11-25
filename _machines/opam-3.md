@@ -7,6 +7,9 @@ manufacturer: AWS
 model: VM
 threads: 2
 location: AWS
+memory: 4GB
+disks:
+  - 200GB
 notes: ocurrent/opam.ocaml.org
 ---
 {% include details.html %} 
