@@ -6,7 +6,11 @@ os: Ubuntu 20.04.3
 manufacturer: AWS
 model: VM
 location: AWS
-notes: opam.ocaml.org
+threads: 2
+memory: 4GB
+disks:
+  - 200GB
+notes: staging.opam.ocaml.org
 ---
 {% include details.html %} 
 
