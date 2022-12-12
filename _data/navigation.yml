@@ -9,6 +9,8 @@ main:
 left:
   - title: www.ocaml.org
     url: www-ocaml-org
+  - title: opam.ocaml.org
+    url: opam-ocaml-org
 
 by-use:
   - title: General
