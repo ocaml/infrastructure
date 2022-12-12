@@ -99,9 +99,9 @@ done
 
 Verify success by checking the certificates on the disk.
 
-```sh
-ls $(docker volume inspect --format '{{ .Mountpoint }}' letsencrypt)/live
-```
+{% raw %}
+    ls $(docker volume inspect --format '{{ .Mountpoint }}' letsencrypt)/live
+{% endraw %}
 
 The temporary NGINX containers can now be stopped.
 
@@ -113,22 +113,22 @@ Using NGINX, we must renew the certificates manually.  This can be achieved via 
 2) Run `certbot renew` with `--deploy-hook "touch /etc/letsencrypt/deploy"`
 3) Reload the NGINX configuration if the `deploy` file has been created
 
-```sh
-#!/bin/bash
-set -eux
-
-LEV="$(docker volume inspect --format '{{ .Mountpoint }}' letsencrypt)"
-rm -f $LEV/deploy
-
-docker run --rm -it -v wwwroot:/var/www/html -v letsencrypt:/etc/letsencrypt certbot/certbot renew --webroot -m mark@tarides.com --agree-tos --no-eff-email --webroot-path /var/www/html --deploy-hook "touch /etc/letsencrypt/deploy"
-
-if [ -f $LEV/deploy ] ; then
-  PS=$(docker ps --filter=name=infra_nginx -q)
-  if [ -n "$PS" ] ; then
-    docker exec $PS nginx -s reload
-  fi
-fi
-```
+{% raw %}
+    #!/bin/bash
+    set -eux
+    
+    LEV="$(docker volume inspect --format '{{ .Mountpoint }}' letsencrypt)"
+    rm -f $LEV/deploy
+    
+    docker run --rm -it -v wwwroot:/var/www/html -v letsencrypt:/etc/letsencrypt certbot/certbot renew --webroot -m mark@tarides.com --agree-tos --no-eff-email --webroot-path /var/www/html --deploy-hook "touch /etc/letsencrypt/deploy"
+    
+    if [ -f $LEV/deploy ] ; then
+      PS=$(docker ps --filter=name=infra_nginx -q)
+      if [ -n "$PS" ] ; then
+        docker exec $PS nginx -s reload
+      fi
+    fi
+{% endraw %}
 
 # NGINX and new Docker containers
 
@@ -151,71 +151,69 @@ As noted for [www.ocaml.org](/www-ocaml-org), Docker does not listen on IPv6 add
 
 We use an Anisble playbook to manage the deployment to the two hosts.
 
-```
-- hosts: all
-  name: Set up SwarmKit
-  tasks:
-    - docker_swarm:
-        listen_addr: "127.0.0.1:2377"
-        advertise_addr: "127.0.0.1:2377"
-
-- hosts: opam-4.ocaml.org:opam-5.ocaml.org
-  tasks:
-    - name: create nginx directory
-      file:
-        path: /etc/nginx/conf.d
-        state: directory
-    - name: configure nginx
-      copy:
-        src: "{{ item }}"
-        dest: /etc/nginx/conf.d
-      loop:
-        - "nginx/{{ inventory_hostname_short }}-http.conf"
-        - "nginx/{{ inventory_hostname_short }}.conf"
-        - "nginx/opam.conf"
-        - "nginx/staging.conf"
-      notify:
-        - restart nginx
-    - name: install certbot renewal script
-      copy:
-        src: letsencrypt-renew
-        dest: /etc/cron.daily/letsencrypt-renew
-        mode: u=rwx,g=rx,o=rx
-    - name: Set up docker services
-      docker_stack:
-        name: infra
-        compose:
-          - version: "3.8"
-            services:
-              nginx:
-                deploy:
-                  mode: global
-                ports:
-                  - target: 80
-                    published: 80
-                    protocol: tcp
-                    mode: host
-                  - target: 443
-                    published: 443
-                    protocol: tcp
-                    mode: host
-                image: nginx
+{% raw %}
+    - hosts: all
+      name: Set up SwarmKit
+      tasks:
+        - docker_swarm:
+            listen_addr: "127.0.0.1:2377"
+            advertise_addr: "127.0.0.1:2377"
+    
+    - hosts: opam-4.ocaml.org:opam-5.ocaml.org
+      tasks:
+        - name: create nginx directory
+          file:
+            path: /etc/nginx/conf.d
+            state: directory
+        - name: configure nginx
+          copy:
+            src: "{{ item }}"
+            dest: /etc/nginx/conf.d
+          loop:
+            - "nginx/{{ inventory_hostname_short }}-http.conf"
+            - "nginx/{{ inventory_hostname_short }}.conf"
+            - "nginx/opam.conf"
+            - "nginx/staging.conf"
+          notify:
+            - restart nginx
+        - name: install certbot renewal script
+          copy:
+            src: letsencrypt-renew
+            dest: /etc/cron.daily/letsencrypt-renew
+            mode: u=rwx,g=rx,o=rx
+        - name: Set up docker services
+          docker_stack:
+            name: infra
+            compose:
+              - version: "3.8"
+                services:
+                  nginx:
+                    deploy:
+                      mode: global
+                    ports:
+                      - target: 80
+                        published: 80
+                        protocol: tcp
+                        mode: host
+                      - target: 443
+                        published: 443
+                        protocol: tcp
+                        mode: host
+                    image: nginx
+                    volumes:
+                      - /etc/nginx/conf.d:/etc/nginx/conf.d:ro
+                      - wwwroot:/var/www/html
+                      - letsencrypt:/etc/letsencrypt:ro
+                  opam_live:
+                    image: ocurrent/opam.ocaml.org:live
+                    command: --root /usr/share/caddy
                 volumes:
-                  - /etc/nginx/conf.d:/etc/nginx/conf.d:ro
-                  - wwwroot:/var/www/html
-                  - letsencrypt:/etc/letsencrypt:ro
-              opam_live:
-                image: ocurrent/opam.ocaml.org:live
-                command: --root /usr/share/caddy
-            volumes:
-              wwwroot:
-                external: true
-              letsencrypt:
-                external: true
-  handlers:
-    - name: restart nginx
-      shell:
-        cmd: PS=$(docker ps --filter=name=infra_nginx -q) && if [ -n "$PS" ] ; then docker exec $PS nginx -s reload; fi
-```
-
-
+                  wwwroot:
+                    external: true
+                  letsencrypt:
+                    external: true
+      handlers:
+        - name: restart nginx
+          shell:
+            cmd: PS=$(docker ps --filter=name=infra_nginx -q) && if [ -n "$PS" ] ; then docker exec $PS nginx -s reload; fi
+{% endraw %}
