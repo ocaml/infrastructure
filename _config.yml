@@ -52,6 +52,8 @@ defaults:
     values:
       layout: single
       nav: main
+      toc: true
+      toc_sticky: true
       sidebar:
         nav: left
   - scope:
