@@ -120,7 +120,7 @@ Using NGINX, we must renew the certificates manually.  This can be achieved via 
     LEV="$(docker volume inspect --format '{{ .Mountpoint }}' letsencrypt)"
     rm -f $LEV/deploy
     
-    docker run --rm -it -v wwwroot:/var/www/html -v letsencrypt:/etc/letsencrypt certbot/certbot renew --webroot -m mark@tarides.com --agree-tos --no-eff-email --webroot-path /var/www/html --deploy-hook "touch /etc/letsencrypt/deploy"
+    systemtd-cat -t "certbot" docker run --rm -v wwwroot:/var/www/html -v letsencrypt:/etc/letsencrypt certbot/certbot renew --webroot -m mark@tarides.com --agree-tos --no-eff-email --webroot-path /var/www/html --deploy-hook "touch /etc/letsencrypt/deploy"
     
     if [ -f $LEV/deploy ] ; then
       PS=$(docker ps --filter=name=infra_nginx -q)
