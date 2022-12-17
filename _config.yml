@@ -53,6 +53,7 @@ defaults:
       layout: single
       nav: main
       toc: true
+      show_date: true
       toc_sticky: true
       sidebar:
         nav: left
