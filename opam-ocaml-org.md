@@ -147,6 +147,23 @@ If the NGINX `proxy_pass` directive points to a specific host such as `proxy_pas
 
 As noted for [www.ocaml.org](/www-ocaml-org), Docker does not listen on IPv6 addresses in swarm mode, and ACME providers check both A and AAAA records.  As we have NGINX operating as a reverse proxy, we can define NGINX as a global service with exactly one container per swarm node, and that the ports are in host mode, which publishes a host port on the node which does listen on IPv6.  In the Docker service configuration shown in the next section note `deploy: mode: global` and `ports: mode: host`.
 
+# TCP BBR Congestion Control
+
+Cubic has been the default TCP congestion algorithm on Linux since 2.6.19 with both MacOS and Microsoft also using it as the default.  Google proposed Bottleneck Bandwidth and Round-trip propagation time (BBR) in 2016 which has been available in the Linux kernel since 4.9.  It has been shown to generally achieve higher bandwidths and lower latencies.  Thanks to @jpds for the impletement details:
+
+Add these two configuration commands to `/etc/sysctl.d/01-bbr.conf`:
+
+```
+net.core.default_qdisc=fq
+net.ipv4.tcp_congestion_control=bbr
+```
+
+and set them with
+
+```sh
+sudo sysctl -p /etc/sysctl.d/01-bbr.conf
+```
+
 # Ansible deployment
 
 We use an Anisble playbook to manage the deployment to the two hosts.
@@ -161,6 +178,19 @@ We use an Anisble playbook to manage the deployment to the two hosts.
     
     - hosts: opam-4.ocaml.org:opam-5.ocaml.org
       tasks:
+        - name: configure sysctl
+          copy:
+            src: "{{ item }}"
+            dest: /etc/sysctl.d
+          loop:
+            - "sysctl/01-bbr.conf"
+          notify:
+            - reload sysctl settings
+        - name: configure nginx
+          copy:
+            src: "{{ item }}"
+            dest: /etc/nginx/conf.d
+          loop:
         - name: create nginx directory
           file:
             path: /etc/nginx/conf.d
@@ -216,4 +246,7 @@ We use an Anisble playbook to manage the deployment to the two hosts.
         - name: restart nginx
           shell:
             cmd: PS=$(docker ps --filter=name=infra_nginx -q) && if [ -n "$PS" ] ; then docker exec $PS nginx -s reload; fi
+        - name: reload sysctl settings
+          shell:
+            cmd: sysctl --system
 {% endraw %}
