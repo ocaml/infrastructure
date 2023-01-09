@@ -1,6 +1,5 @@
 ---
 name: carpenter
-ip:
 fqdn: carpenter.ocamllabs.io
 notes: Dead
 location: Caelum

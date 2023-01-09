@@ -1,6 +1,6 @@
 ---
 name: ci.mirage.io
-ip:
+ip: 51.159.31.165
 fqdn: ci-mirage-io.ocamllabs.io
 threads: 8
 model: QuantaMicro X10E-9N

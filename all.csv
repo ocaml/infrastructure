@@ -1,0 +1,9 @@
+---
+layout: null
+---
+
+fqdn,ip,manufacturer,model,os,location,pool
+{% for item in site.machines -%}
+{{item.fqdn}},{{item.ip}},{{item.manufacturer}},{{item.model}},{{item.os}},{{item.location}},{{item.pool}}
+{% endfor %}
+

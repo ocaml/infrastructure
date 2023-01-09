@@ -1,6 +1,6 @@
 ---
 name: v3c
-ip:
+ip: 51.159.190.183
 fqdn: v3c.ocaml.org
 notes: www.ocaml.org
 location: Scaleway

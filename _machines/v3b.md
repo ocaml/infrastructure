@@ -1,6 +1,6 @@
 ---
 name: v3b
-ip:
+ip: 51.159.83.169
 fqdn: v3b.ocaml.org
 notes: staging.ocaml.org
 location: Scaleway
