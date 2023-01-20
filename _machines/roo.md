@@ -1,6 +1,6 @@
 ---
 name: roo
-ip:
+ip: 128.232.124.253
 fqdn: roo.ocamllabs.io
 notes: Benchmarking -- fermat.ocamllabs.io
 manufacturer: SuperMicro
