@@ -11,6 +11,8 @@ left:
     url: www-ocaml-org
   - title: opam.ocaml.org
     url: opam-ocaml-org
+  - title: watch.ocaml.org
+    url: watch-ocaml-org
 
 by-use:
   - title: General
