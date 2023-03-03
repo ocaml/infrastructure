@@ -53,9 +53,17 @@ docker stack which implements the `docker-compose.yml` file.
                 image: chocobozzz/peertube-webserver:latest
                 env_file:
                   - /root/.env
+                deploy:
+                  mode: global
                 ports:
-                 - "80:80"
-                 - "443:443"
+                 - target: 80
+                   published: 80
+                   protocol: tcp
+                   mode: host
+                 - target: 443
+                   published: 443
+                   protocol: tcp
+                   mode: host
                 volumes:
                   - nginx-conf:/etc/nginx/conf.d
                   - peertube-assets:/var/www/peertube/peertube-latest/client/dist:ro
