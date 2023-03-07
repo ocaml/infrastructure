@@ -2,9 +2,11 @@
 name: x86-bm-c1
 ip: 51.159.111.94
 fqdn: x86-bm-c1.sw.ocaml.org
+manufacturer: Dell
 model: PowerEdge R720
 os: Ubuntu 22.04
 threads: 32
+memory: 256GB
 location: Scaleway
 pool: linux-x86_64
 notes: Cluster worker
