@@ -65,3 +65,5 @@ opam-repository switched to using the `ocaml-option-` packages to solve the comb
 This work is all in progress and being tested alongside changes in  opam 2.2 to support the _depext_ experience on Windows. The only reason that's not being upstreamed piecemeal is that changes to the compiler packages in opam-repository trigger switch rebuilds all over the world, so we don't want to that until we're sure that the packages are correct. The intention is to do this around the time of the alpha release of opam 2.2, once the work in opam itself has settled down.
 
 Thanks for getting to the end, and happy Windows CI testing!
+
+*[Discuss this post further](https://discuss.ocaml.org/t/sunsetting-opam-repository-mingw/11632) on the forums.*
