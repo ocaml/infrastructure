@@ -4,9 +4,9 @@ title: An Update on the Environmental Impact of the OCaml.org Cluster
 
 *TL;DR For the 19 machines we monitor in the OCaml.org cluster we are seeing a figure in the ball park of 70kg of CO2e per week.*
 
-Since the OCaml.org re-design we have, as a community, committed to being [accountable for our impact on the environment](https://ocaml.org/policies/carbon-footprint). As a first step we hoped to successfully quantify our impact by calculating the total amount of energy we were using. It was important to establish a baseline to help determine whether any changes we make in the future are effectively reducing our CO2e emissions.
+Since the OCaml.org redesign we have, as a community, [committed](https://discuss.ocaml.org/t/ocaml-org-recapping-2022-and-queries-on-the-fediverse/11099/21) to being [accountable for our impact on the environment](https://ocaml.org/policies/carbon-footprint). As a first step we aimed to accurately quantify our impact by calculating the total amount of energy we are using. It is necessary to establish a baseline of present activity to determine whether any changes we make in the future are reducing our CO2e emissions.
 
-This has not been a straight-forward number to identify, however, as there are a [large cluster of machines](https://infra.ocaml.org/by-use/general) running day and night providing services such as [ocaml-ci][], [opam-repo-ci][], the [docker base images](https://images.ci.ocaml.org) and services like ocaml.org itself and the federated watch.ocaml.org. These machines span numerous architectures, operating systems, and types (e.g. virtual vs. bare-metal) making it difficult to build portable tools to monitor each machine.
+This has not been a straightforward number to identify as there is a [large cluster of machines](https://infra.ocaml.org/by-use/general) running day and night providing services such as [ocaml-ci][], [opam-repo-ci][], the [docker base images](https://images.ci.ocaml.org) and services like ocaml.org itself and the federated watch.ocaml.org. These machines span numerous architectures, operating systems, and types (e.g. virtual vs. bare-metal) making it difficult to build portable tools to monitor each machine.
 
 We've used the past few months to build new tools and deploy monitoring devices, to give us as accurate a figure as possible.
 
