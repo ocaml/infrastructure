@@ -39,15 +39,15 @@ val get_intensity : t -> int option
 
 With both the cluster's total power draw and a value for the carbon intensity, we can now calculate a value for total emissions from energy use. For a single machine, let's assume a power reading of `250W`. We also know how frequently we are sampling the power reading, for example every `10s`. We can use these values to calculate the `kWh` value.
 
-$$
-\frac{250}{1000} \times \frac{10}{3600} \approx 0.000694
-$$
+```
+(250 / 1000) * (10 / 3600) = 0.000694
+```
 
 If the grid is currently reporting a carbon intensity of `100gC02e/kWh` then the emissions at this particular point in time are:
 
-$$
-0.000694 \times 100 = 0.0694gCO_{2}
-$$
+```
+0.000694 * 100 = 0.0694gCO2
+```
 
 To put that in perspective, for one person, the single journey from [Heathrow airport in London to Belfast International Airport](https://www.atmosfair.de/en/offset/flight/) (a distance of about 500km) works out at about `160kg` of CO2e. If the fictious machine above were to always draw `250W` and the grid always had the same intensity, it would take about 266 days to equate to the same amount.
 
