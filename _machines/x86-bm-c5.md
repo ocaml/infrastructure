@@ -1,7 +1,7 @@
 ---
-name: x86-bm-c3
-ip: 51.159.111.94
-fqdn: x86-bm-c3.sw.ocaml.org
+name: x86-bm-c5
+ip: 51.159.214.52
+fqdn: x86-bm-c5.sw.ocaml.org
 manufacturer: Dell
 model: PowerEdge R720
 os: Ubuntu 22.04
