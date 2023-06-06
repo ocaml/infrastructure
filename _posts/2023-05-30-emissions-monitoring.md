@@ -2,7 +2,7 @@
 title: An Update on the Environmental Impact of the OCaml.org Cluster
 ---
 
-*TL;DR For the 19 machines we monitor in the OCaml.org cluster we are seeing a figure in the ball park of 70kg of CO2e per week.*
+*TL;DR For the 19 machines we monitor in the OCaml.org cluster we are seeing a figure in the ball park of 70kg of CO2e per week. [Discussion thread here](https://discuss.ocaml.org/t/initial-emissions-monitoring-of-the-ocaml-org-infrastructure/12335).*
 
 Since the OCaml.org redesign we have, as a community, [committed](https://discuss.ocaml.org/t/ocaml-org-recapping-2022-and-queries-on-the-fediverse/11099/21) to being [accountable for our impact on the environment](https://ocaml.org/policies/carbon-footprint). As a first step we aimed to accurately quantify our impact by calculating the total amount of energy we are using. It is necessary to establish a baseline of present activity to determine whether any changes we make in the future are reducing our CO2e emissions.
 
