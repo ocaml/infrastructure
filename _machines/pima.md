@@ -11,6 +11,9 @@ notes: Cluster worker
 pool: linux-x86_64
 serial: 7NDMYQ2
 processor: 'AMD EPYC 7551 32-Core Processor'
+disks:
+  - 120GB SSD
+  - 1.5TB NVMe
 ---
 {% include details.html %} 
 

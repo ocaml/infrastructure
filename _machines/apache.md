@@ -11,6 +11,9 @@ location: Caelum
 notes: Cluster worker
 pool: linux-x86_64
 processor: 'AMD EPYC 7551 32-Core Processor'
+disks:
+  - 120GB SSD
+  - 1.5TB NVMe
 ---
 {% include details.html %} 
 

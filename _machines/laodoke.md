@@ -11,6 +11,9 @@ notes: Cluster worker
 pool: linux-x86_64
 serial: DLDSGL2
 processor: 'Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz'
+disks:
+  - 120GB SSD
+  - 1.5TB NVMe
 ---
 {% include details.html %} 
 

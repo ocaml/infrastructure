@@ -10,6 +10,9 @@ threads: 72
 location: Caelum
 notes: Cluster worker
 pool: linux-x86_64
+disks:
+  - 2 x 400GB SSD
+  - 1.5TB NVMe
 ---
 {% include details.html %} 
 
