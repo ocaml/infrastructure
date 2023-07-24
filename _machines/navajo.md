@@ -7,7 +7,7 @@ model: PowerEdge R7425
 os: Ubuntu 20.04
 threads: 128
 location: Caelum
-notes: Benchmarking Team
+notes: Benchmark Tooling Team.  Sandmark benchmarking.
 serial: 7NCSYQ2
 ssh: mte24@navajo.ocamllabs.io
 ---
