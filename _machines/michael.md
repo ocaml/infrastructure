@@ -2,7 +2,7 @@
 name: michael
 ip:
 fqdn: michael.caelum.ci.dev
-notes: @eutro
+notes: OCaml on Windows benchmarking (@eutro)
 location: Caelum
 manufacturer: Dell
 model: PowerEdge R420
