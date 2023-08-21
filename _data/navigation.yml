@@ -35,7 +35,7 @@ by-use:
         url: /by-use/macos-x86_64
       - title: MacOS-arm64
         url: /by-use/macos-arm64
-      - title: FreeBSD-arm64
+      - title: FreeBSD-x86_64
         url: /by-use/freebsd-x86_64
 
 by-location:
