@@ -17,6 +17,8 @@ left:
 by-use:
   - title: General
     url: /by-use/general
+  - title: Benchmarking
+    url: /by-use/benchmarking
   - title: Worker Pools
     children:
       - title: Linux-x86_64
@@ -53,6 +55,8 @@ by-location:
         url: /by-location/custodian
       - title: Marist College
         url: /by-location/marist-college
+      - title: IIT Madras
+        url: /by-location/iitm
 
 by-ip:
   - title: Subnets

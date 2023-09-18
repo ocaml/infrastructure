@@ -6,6 +6,8 @@ model: Super Server
 os: Ubuntu 18.04
 threads: 16
 location: Caelum
+use: benchmarking
+service: Sandmark
 notes: General purpose machine, typically for benchmarking by compiler developers.  Primary users nickbarnes, polytypic, fabrice, sadiq, shakthi
 serial: NM18CS008836
 processor: 'Intel(R) Xeon(R) Silver 4108 CPU @ 1.80GHz'
