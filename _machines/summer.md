@@ -3,7 +3,7 @@ name: summer
 ip: 128.232.124.251
 fqdn: summer.ocamllabs.io
 model: Super Server
-os: Ubuntu 18.04
+os: FreeBSD 13.2
 threads: 16
 location: Caelum
 notes: FreeBSD worker + some user data in /home (check)
