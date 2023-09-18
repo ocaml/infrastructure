@@ -9,6 +9,7 @@ os: Ubuntu 20.04.3
 threads: 72
 notes: Benchmarking. /dev/sdb is unused
 location: Caelum
+use: benchmarking
 disks:
   - 400GB SSD
   - 400GB SSD
