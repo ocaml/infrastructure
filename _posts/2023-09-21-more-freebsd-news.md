@@ -1,5 +1,5 @@
 ---
-title: FreeBSD is available in more places
+title: FreeBSD is Available in More Places
 ---
 
 Previously the infrastructure team had made FreeBSD available for [opam-repo-ci](https://opam.ci.ocaml.org). 
