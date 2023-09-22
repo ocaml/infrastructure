@@ -2,9 +2,9 @@
 title: FreeBSD is Available in More Places
 ---
 
-Previously the infrastructure team had made FreeBSD available for [opam-repo-ci](https://opam.ci.ocaml.org). 
-Now we can announce that the same support has been added to [ocaml-ci](https://ocaml.ci.dev) giving coverage for both OCaml 
-4.14 and the new OCaml 5.1 release.  opam-repo-ci has also been upgraded to support OCaml 5.1. We aim to support both 4.14 as
+Previously the infrastructure team had made FreeBSD available for [`opam-repo-ci`](https://opam.ci.ocaml.org). 
+Now we can announce that the same support has been added to [`ocaml-ci`](https://ocaml.ci.dev), giving coverage for both OCaml 
+4.14 and the new OCaml 5.1 release.  `opam-repo-ci` has also been upgraded to support OCaml 5.1. We aim to support both 4.14 as
 the Long Term Support release and the latest 5.* release.
 
 Additionally an [opam-health-check instance](http://freebsd-health-check.ocamllabs.io:8080) has been setup to provide 
