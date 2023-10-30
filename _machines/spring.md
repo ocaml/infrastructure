@@ -7,7 +7,6 @@ os: Ubuntu 20.04
 threads: 8
 location: Caelum
 use: benchmarking
-service: current-bench
 notes: Benchmarking Spare
 serial: 0123456789
 processor: 'Intel(R) Xeon(R) Silver 4108 CPU @ 1.80GHz'

@@ -11,5 +11,6 @@ notes: Benchmarking team.  Current-bench and OCaml benchmarking projects.
 serial: NM18CS008840
 ssh: mte24@autumn.ocamllabs.io
 use: benchmarking
+service: current-bench
 ---
 {% include details.html %}
