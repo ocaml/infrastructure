@@ -1,7 +1,7 @@
 ---
 name: carpenter
 fqdn: carpenter.ocamllabs.io
-notes: Dead
+notes:
 location: Caelum
 manufacturer: SiFive
 model: U74-MC
