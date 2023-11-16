@@ -4,7 +4,7 @@ ip: 10.147.20.85
 fqdn: turing.ocamllabs.io
 model: Precision 7820 Tower
 processor: Intel(R) Xeon(R) Gold 5120 CPU @ 2.20GHz
-os: Ubuntu 20.04.5 LTS
+os: Ubuntu 22.04.3 LTS
 threads: 28
 location: IIT Madras
 use: benchmarking

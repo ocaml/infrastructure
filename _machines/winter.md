@@ -3,7 +3,7 @@ name: winter
 ip: 128.232.124.181
 fqdn: winter.ocamllabs.io
 model: Super Server
-os: Ubuntu 18.04
+os: Ubuntu 22.04.3 LTS
 threads: 16
 location: Caelum
 use: benchmarking
