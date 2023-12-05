@@ -4,7 +4,7 @@ title: Relocating opam.ci.ocaml.org and ocaml.ci.dev
 
 About six months ago, [`opam-repo-ci` (opam.ci.ocaml.org)](https://opam.ci.ocaml.org) suffered from a lack of system memory ([issue 220](https://github.com/ocurrent/opam-repo-ci/issues/220)) which caused it to be moved to the machine hosting [`ocaml-ci` (ocaml.ci.dev)](https://ocaml.ci.dev).
 
-Subsequently, that machine suffered from BTRFS volume corruption [issue 51](https://github.com/ocaml/infrastructure/issues/51).  Therefore, both services were moved to a big new server.  The data was efficiently migrated using BTRFS tools `btrfs send | btrfs receive`.
+Subsequently, that machine suffered from BTRFS volume corruption ([issue 51](https://github.com/ocaml/infrastructure/issues/51)). Therefore, we moved both services to a larger new server. The data was efficiently migrated using BTRFS tools: `btrfs send | btrfs receive`.
 
 Since the move, we have seen issues with BTRFS metadata plus we have suffered from a build-up of sub volumes as reported by other users: [Docker gradually exhausts disk space on BTRFS](https://github.com/moby/moby/issues/27653).
 
