@@ -8,7 +8,7 @@ Subsequently, that machine suffered from BTRFS volume corruption ([issue 51](htt
 
 Since the move, we have seen issues with BTRFS metadata. Plus, we have suffered from a build-up of subvolumes, as reported by other users: [Docker gradually exhausts disk space on BTRFS](https://github.com/moby/moby/issues/27653).
 
-Unfortunately, both services went down on Friday evening [issue 85](https://github.com/ocaml/infrastructure/issues/85).  Analysis showed over 500 BTRFS sub volumes, a shortage of metadata space and insufficient space to perform a BTRFS _rebalance_.
+Unfortunately, both services went down on Friday evening ([issue 85](https://github.com/ocaml/infrastructure/issues/85)). Analysis showed over 500 BTRFS subvolumes, a shortage of metadata space, and insufficient space to perform a BTRFS _rebalance_.
 
 Returning to the original configuration of splitting the ci.dev and ocaml.org services, they have been moved on to new and separate hardware.  The underlying filesystem is now a RAID1-backed ext4 formatted with `-i 8192` to ensure sufficient inodes are available.  Docker is using Overlayfs.  RSYNC was used to copy the databases and logs from the old server.  This change should add resilience and has doubled the capacity for storing history logs.
 
