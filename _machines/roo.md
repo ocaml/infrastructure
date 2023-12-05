@@ -5,6 +5,7 @@ fqdn: roo.ocamllabs.io
 notes: Benchmarking -- fermat.ocamllabs.io -- parallel benchmarks
 manufacturer: SuperMicro
 model: h8qg6/h8qgi
+os: Ubuntu 22.04.3 LTS
 location: Caelum
 use: benchmarking
 service: current-bench

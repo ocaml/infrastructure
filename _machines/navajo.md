@@ -5,7 +5,7 @@ fqdn: navajo.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R7425
 processor: AMD EPYC 7551 32-Core Processor
-os: Ubuntu 20.04
+os: Ubuntu 22.04.3 LTS
 threads: 128
 location: Caelum
 use: benchmarking
