@@ -1,5 +1,6 @@
 ---
 title: Current Bench Maintenance
+date: "2024-02-19"
 ---
 
 Due to storage related maintenance operations on Monday 19th February '24
