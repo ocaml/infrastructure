@@ -7,9 +7,8 @@ model: PowerEdge R630
 serial: DLDZGL2
 os: Ubuntu 22.04.3 LTS
 threads: 72
-notes: Benchmarking. /dev/sdb is unused
 location: Caelum
-use: benchmarking
+pool: openbsd-amd64
 disks:
   - 400GB SSD
   - 400GB SSD

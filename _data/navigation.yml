@@ -39,6 +39,10 @@ by-use:
         url: /by-use/macos-arm64
       - title: FreeBSD-x86_64
         url: /by-use/freebsd-x86_64
+      - title: Windows-amd64
+        url: /by-use/windows-amd64
+      - title: OpenBSD-amd64
+        url: /by-use/openbsd-amd64
 
 by-location:
   - title: Locations

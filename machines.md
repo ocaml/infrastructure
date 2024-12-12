@@ -25,7 +25,7 @@ title: Machines
 {% endfor %}
 </table>
 
-{% assign pools = "linux-x86_64,linux-ppc64,linux-arm64,windows-x86_64,linux-s390x,linux-riscv64,macos-x86_64,macos-arm64" | split: ',' %}
+{% assign pools = "linux-x86_64,linux-ppc64,linux-arm64,windows-x86_64,linux-s390x,linux-riscv64,macos-x86_64,macos-arm64,windows-amd64,openbsd-amd64" | split: ',' %}
 {% for pool in pools %}
 
 # Worker Pool {{pool}}
