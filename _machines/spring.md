@@ -15,6 +15,8 @@ pool: freebsd-x86_64
 disks:
   - 200GB SSD
   - 1.0TB
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

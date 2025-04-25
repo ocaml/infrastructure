@@ -14,6 +14,8 @@ disks:
   - 1TB
   - 1TB
 ip: 128.232.124.211
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

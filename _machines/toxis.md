@@ -16,6 +16,8 @@ disks:
   - 400GB SSD
   - 400GB SSD
   - 1.6TB NVMe
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

@@ -16,6 +16,8 @@ disks:
   - 256GB SSD
   - 1TB
   - 1TB
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

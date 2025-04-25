@@ -13,6 +13,8 @@ notes: Cluster worker
 processor: 'Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz'
 disks:
   - 2 x 7.1TB
+latitude: 48.8591
+longitude: 2.2935
 ---
 {% include details.html %} 
 

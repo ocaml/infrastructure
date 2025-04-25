@@ -1,6 +1,10 @@
 ---
 title: Machines
+toc: false
+classes: wide
 ---
+
+{% include machines-map.html %}
 
 <table>
 <tr>

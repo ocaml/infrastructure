@@ -13,6 +13,8 @@ memory: 8GB
 disks:
   - 28GB
   - 110GB
+latitude: 48.8591
+longitude: 2.2935
 ---
 {% include details.html %} 
 

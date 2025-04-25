@@ -11,6 +11,8 @@ notes: Cluster worker
 pool: linux-x86_64
 serial: DLDVGL2
 processor: 'Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz'
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

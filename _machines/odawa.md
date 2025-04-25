@@ -12,6 +12,8 @@ ip: 128.232.124.247
 os: Ubuntu 24.04
 threads: 256
 processor: 'AMD EPYC 7763 64-Core Processor'
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

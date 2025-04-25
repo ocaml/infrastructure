@@ -12,6 +12,8 @@ disks:
   - 18GB
   - 140GB
 notes: opam.ocaml.org
+latitude: 48.8591
+longitude: 2.2935
 ---
 {% include details.html %} 
 

@@ -13,5 +13,7 @@ service: Sandmark Nightly
 notes: Benchmark Tooling Team.  Sandmark benchmarking.
 serial: 7NCSYQ2
 ssh: mte24@navajo.ocamllabs.io
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %}

@@ -14,6 +14,8 @@ disks:
   - 230GB virtual disk
 notes: Staging site for docs.ocaml.org.  Review in September 2023.
 location: Scaleway
+latitude: 48.8591
+longitude: 2.2935
 ---
 {% include details.html %} 
 

@@ -14,6 +14,8 @@ processor: 'Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz'
 disks:
   - 120GB SSD
   - 1.5TB NVMe
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

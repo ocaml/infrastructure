@@ -7,6 +7,8 @@ model: VM
 location: Scaleway
 notes: looks unused -- was probably docs.ci.ocamllabs.io
 location: Scaleway
+latitude: 48.8591
+longitude: 2.2935
 ---
 {% include details.html %} 
 

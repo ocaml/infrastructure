@@ -15,6 +15,8 @@ disks:
   - 1.8TB NVMe
   - 1.8TB NVMe
 processor: Power9
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

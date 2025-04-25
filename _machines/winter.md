@@ -12,6 +12,8 @@ notes: General purpose machine, typically for benchmarking by compiler developer
 serial: NM18CS008836
 processor: 'Intel(R) Xeon(R) Silver 4108 CPU @ 1.80GHz'
 ssh: mte24@winter.ocamllabs.io
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

@@ -14,5 +14,7 @@ location: Scaleway
 ssh: root@riscv-bm-a3
 use: RISCV worker
 pool: linux-riscv64
+latitude: 48.8591
+longitude: 2.2935
 ---
 {% include details.html %}

@@ -11,6 +11,8 @@ threads: 8
 processor: 'AMD EPYC 7401P 24-Core Processor'
 disks:
   - 280GB
+latitude: 48.8591
+longitude: 2.2935
 ---
 {% include details.html %} 
 

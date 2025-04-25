@@ -14,6 +14,8 @@ pool: linux-arm64
 disks:
   - 900GB NVMe
   - 2 x 3.5TB NVMe
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

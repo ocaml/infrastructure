@@ -15,5 +15,7 @@ serial: C015BW3
 ssh: current-bench@x86-bm-d1.sw.ocaml.org
 use: benchmarking
 service: current-bench
+latitude: 48.8591
+longitude: 2.2935
 ---
 {% include details.html %}

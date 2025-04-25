@@ -14,6 +14,8 @@ notes: Cluster worker
 pool: linux-arm64
 disks:
   - 2 x 900GB NVMe
+latitude: 32.7767
+longitude: -96.7970
 ---
 {% include details.html %} 
 

@@ -8,6 +8,8 @@ os:
 threads: 8
 location: Caelum
 notes: Console ports for mini-itx
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

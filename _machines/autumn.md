@@ -12,5 +12,7 @@ serial: NM18CS008840
 ssh: mte24@autumn.ocamllabs.io
 use: benchmarking
 service: current-bench
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %}

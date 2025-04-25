@@ -14,6 +14,8 @@ pool: linux-x86_64
 disks:
   - 2 x 400GB SSD
   - 1.5TB NVMe
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

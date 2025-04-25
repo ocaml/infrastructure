@@ -11,5 +11,7 @@ use: benchmarking
 service: Sandmark Nightly
 notes: Benchmarking Team -- Used for Sandmark; requires ZeroTier connection
 serial: 4YGD013
+latitude: 12.994745
+longitude: 80.233408
 ---
 {% include details.html %}

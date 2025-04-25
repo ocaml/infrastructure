@@ -11,6 +11,8 @@ threads: 24
 processor: Intel(R) Xeon(R) CPU E5-2420 0 @ 1.90GHz
 disks:
   - 1TB SSD
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

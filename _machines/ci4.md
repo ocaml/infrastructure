@@ -10,6 +10,8 @@ location: Scaleway
 notes: ocurrent/multicore-ci and ocurrent/solver-service
 serial: 7NDNYQ2
 processor: 'AMD EPYC 7402P 24-Core Processor'
+latitude: 48.8591
+longitude: 2.2935
 ---
 {% include details.html %} 
 

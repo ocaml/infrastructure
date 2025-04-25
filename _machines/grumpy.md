@@ -9,6 +9,8 @@ location: Caelum
 notes: Git Repo
 serial: 
 processor: 'Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz'
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 

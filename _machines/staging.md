@@ -13,6 +13,8 @@ processor: AMD EPYC 7282 16-Core Processor
 disks:
   - 240GB
   - 240GB
+latitude: 48.8591
+longitude: 2.2935
 ---
 {% include details.html %} 
 

@@ -10,6 +10,8 @@ location: Scaleway
 notes: ci3.ocamllabs.io - ocluster scheduler
 serial: 7NDNYQ2
 processor: 'AMD EPYC 7401P 24-Core Processor'
+latitude: 48.8591
+longitude: 2.2935
 ---
 {% include details.html %} 
 

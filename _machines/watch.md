@@ -13,6 +13,8 @@ disks:
   - 140GB virtual disk
 notes: PeerTube host at https://watch.ocaml.org
 location: Scaleway
+latitude: 48.8591
+longitude: 2.2935
 ---
 {% include details.html %} 
 

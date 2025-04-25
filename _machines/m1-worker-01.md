@@ -11,6 +11,8 @@ notes: Cluster worker
 processor: 'Apple M1'
 disks:
   - 512GB SSD
+latitude: 51.2798
+longitude: 0.5487
 ---
 {% include details.html %} 
 

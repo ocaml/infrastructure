@@ -15,6 +15,8 @@ disks:
   - 1.6TB NVMe
   - 1.6TB NVMe
 processor: 'AMD EPYC 7H12 64-Core Processor'
+latitude: 52.2109
+longitude: 0.0917
 ---
 {% include details.html %} 
 
