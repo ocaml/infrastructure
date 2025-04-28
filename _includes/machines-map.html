@@ -1,15 +1,33 @@
 <div id="map" style="height: 500px; width: 100%;"></div>
 
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""/>
+
+<!-- Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+<!-- Leaflet MarkerCluster CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+<!-- Leaflet MarkerCluster JavaScript -->
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
 <script>
-function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 2,  // Start with a wider view
-    center: { lat: 20, lng: 0 }  // Center more globally
-  });
-  
-  const bounds = new google.maps.LatLngBounds();
-  const infoWindow = new google.maps.InfoWindow();
-  
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize map
+  const map = L.map('map').setView([20, 0], 2);
+
+  // Add OpenStreetMap tile layer
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 19
+  }).addTo(map);
+
   // Define machines data array from Jekyll collection
   const machinesData = [
     {% for machine in site.machines %}
@@ -26,114 +44,61 @@ function initMap() {
       {% endif %}
     {% endfor %}
   ];
-  
-  // Create markers for each machine
-  const markers = machinesData.map(machine => {
-    const position = { 
-      lat: machine.lat + (Math.random() * 0.001),
-      lng: machine.lng + (Math.random() * 0.001)
-    };
-    
-    // Create a standard marker
-    const marker = new google.maps.Marker({
-      position: position,
-      title: machine.name
-    });
-    
-    // Create info window content
+
+  // Create marker cluster group
+  const markers = L.markerClusterGroup({
+    maxClusterRadius: 50,
+    spiderfyOnMaxZoom: true,
+    showCoverageOnHover: false,
+    zoomToBoundsOnClick: true
+  });
+
+  // Add markers for each machine
+  machinesData.forEach(machine => {
+    // Add slight random offset to prevent overlap when machines are at exact same coordinates
+    const position = [
+      machine.lat + (Math.random() * 0.001),
+      machine.lng + (Math.random() * 0.001)
+    ];
+
+    // Create marker
+    const marker = L.marker(position);
+
+    // Create popup content
     let content = `
       <div>
         <h3>${machine.name}</h3>`;
-        
+
     if (machine.description) {
       content += `<p>${machine.description}</p>`;
     }
-    
+
     content += `<p>Coordinates: ${machine.lat}, ${machine.lng}</p>
       </div>`;
-    
-    // Add click listener for info window
-    marker.addListener("click", () => {
-      infoWindow.setContent(content);
-      infoWindow.open(map, marker);
-    });
-    
-    bounds.extend(position);
-    return marker;
-  });
-  
-  // Initialize MarkerClusterer
-  const markerCluster = new markerClusterer.MarkerClusterer({
-    map,
-    markers,
-    algorithm: new markerClusterer.GridAlgorithm({
-      maxZoom: 15,
-      gridSize: 50
-    }),
-    renderer: {
-      render: ({ count, position }) => {
-        // Custom cluster marker
-        const marker = new google.maps.Marker({
-          position,
-          label: {
-            text: String(count),
-            color: "white",
-            fontSize: "13px",
-            fontWeight: "bold"
-          },
-          icon: {
-            path: google.maps.SymbolPath.CIRCLE,
-            scale: 20,
-            fillColor: "#DB4437",
-            fillOpacity: 0.9,
-            strokeWeight: 2,
-            strokeColor: "#FFFFFF"
-          },
-          zIndex: 1000 + count
-        });
-        
-        return marker;
-      }
-    }
+
+    // Bind popup to marker
+    marker.bindPopup(content);
+
+    // Add marker to cluster group
+    markers.addLayer(marker);
   });
 
-  // Make sure all markers are visible initially
-  if (markers.length > 0) {
-    // Ensure bounds are not too small
-    if (bounds.getNorthEast().equals(bounds.getSouthWest())) {
-      const extendPoint = new google.maps.LatLng(
-        bounds.getNorthEast().lat() + 0.01,
-        bounds.getNorthEast().lng() + 0.01
-      );
-      bounds.extend(extendPoint);
-    }
-    
-    // Fit bounds with padding
-    map.fitBounds(bounds, { padding: 50 });
-    
-    // Add listener for when map is idle after initial load
-    google.maps.event.addListenerOnce(map, 'idle', function() {
-      // If zoom is too high (too zoomed in), restrict it
+  // Add marker cluster to map
+  map.addLayer(markers);
+
+  // Fit map to bounds of all markers
+  if (machinesData.length > 0) {
+    map.fitBounds(markers.getBounds(), {
+      padding: [50, 50]
+    });
+
+    // Prevent excessive zoom only on initial load
+    // Check current zoom after bounds are set and limit if needed
+    setTimeout(function() {
       if (map.getZoom() > 10) {
         map.setZoom(10);
       }
-      
-      // Force redraw of clusters
-      google.maps.event.trigger(map, 'resize');
-    });
+    }, 100); // Small delay to ensure bounds are applied first
   }
-}
-</script>
-
-<!-- Add MarkerClusterer library -->
-<script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
-
-<script>
-  // Define the callback as the global initMap function
-  window.initMap = initMap;
-</script>
-
-<!-- Replace YOUR_API_KEY with your actual Google Maps API key -->
-<script async
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABz1w7kIoEbf8HGG4ws2JbtB8e-jqdpLk&callback=initMap">
+});
 </script>
