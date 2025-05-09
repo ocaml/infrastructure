@@ -8,7 +8,7 @@ serial: DLDZGL2
 os: Ubuntu 22.04.3 LTS
 threads: 72
 location: Caelum
-pool: openbsd-amd64
+pool: linux-x86_64
 disks:
   - 400GB SSD
   - 400GB SSD
