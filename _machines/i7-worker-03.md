@@ -3,7 +3,7 @@ name: i7-worker-03
 ip:
 fqdn: i7-worker-03.ocamllabs.io
 model: Apple Mac Mini
-os: Monteray 12.6
+os: Sequoia 15.5
 threads: 12
 location: Custodian
 pool: macos-x86_64
