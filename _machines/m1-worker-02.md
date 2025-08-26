@@ -3,7 +3,7 @@ name: m1-worker-01
 ip:
 fqdn: m1-worker-02.macos.ci.dev
 model: Apple Mac Mini
-os: Monteray 12.6
+os: Sequoia 15.5
 threads: 8
 location: Custodian
 pool: macos-arm64
