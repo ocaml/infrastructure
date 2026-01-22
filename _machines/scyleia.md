@@ -5,7 +5,7 @@ fqdn: scyleia.ocamllabs.io
 manufacturer: Raptor
 model: Talos II
 serial: W1000194
-os: Ubuntu 22.04
+os: Ubuntu 24.04
 threads: 176
 location: Caelum
 notes: Cluster worker
