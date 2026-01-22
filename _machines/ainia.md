@@ -4,7 +4,7 @@ ip: 128.232.124.247
 fqdn: ainia.ocamllabs.io
 manufacturer: Avantek
 model: Ampere(TM) Mt Snow
-os: Ubuntu 22.04
+os: Ubuntu 24.04
 threads: 80
 memory: 256GB
 processor: Ampere Altra Processor ARMv8
