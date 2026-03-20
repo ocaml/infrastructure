@@ -5,7 +5,7 @@ fqdn: orithia.ocamllabs.io
 manufacturer: Raptor
 model: Talos II
 serial: W1000194
-os: Ubuntu 24.04
+os: Ubuntu 24.04.3 LTS
 threads: 176
 location: Caelum
 notes: Cluster worker

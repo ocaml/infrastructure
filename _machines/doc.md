@@ -2,7 +2,7 @@
 name: doc
 ip: 128.232.124.240
 fqdn: doc.ocamllabs.io
-os: Ubuntu 22.04
+os: Ubuntu 22.04.5 LTS
 location: Caelum
 notes: BIND, netbootxyz and teleport
 manufacturer: Dell

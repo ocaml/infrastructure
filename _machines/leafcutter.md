@@ -8,7 +8,7 @@ manufacturer: SiFive
 model: U74-MC
 processor: RISC-V U74
 threads: 4
-os: Ubuntu 22.04.1
+os: Ubuntu 22.04.4 LTS
 pool: linux-riscv64
 latitude: 52.2109
 longitude: 0.0917

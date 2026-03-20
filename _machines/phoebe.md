@@ -1,11 +1,11 @@
 ---
 name: phoebe
 ip: 128.232.124.231
-fqdn: phoebe.ocamllabs.io
+fqdn: phoebe.caelum.ci.dev
 manufacturer: Dell
 serial: DLDTGL2
 model: PowerEdge R630
-os: Ubuntu 22.04
+os: Ubuntu 24.04.3 LTS
 threads: 72
 location: Caelum
 processor: Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz

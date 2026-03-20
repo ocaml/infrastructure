@@ -3,7 +3,7 @@ name: oregano
 ip: 128.232.124.178
 fqdn: oregano.caelum.ci.dev
 manufacturer: Supermicro
-os: Ubuntu 24.04 LTS
+os: Ubuntu 24.04.2 LTS
 threads: 40
 location: Caelum
 pool: openbsd-amd64

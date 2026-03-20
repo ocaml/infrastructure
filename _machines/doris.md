@@ -1,10 +1,10 @@
 ---
 name: doris
 ip: 128.232.124.221
-fqdn: doris.ocamllabs.io
+fqdn: doris.caelum.ci.dev
 manufacturer: Dell
 model: PowerEdge R6525
-os: Ubuntu 22.04
+os: Ubuntu 24.04.3 LTS
 threads: 256
 location: Caelum
 notes: Cluster worker

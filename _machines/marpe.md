@@ -1,7 +1,7 @@
 ---
 name: marpe
 ip: 128.232.124.222
-fqdn: marpe.ocamllabs.io
+fqdn: marpe.caelum.ci.dev
 manufacturer: Dell
 model: PowerEdge R6525
 os: Ubuntu 22.04

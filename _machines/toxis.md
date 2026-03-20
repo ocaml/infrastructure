@@ -1,8 +1,8 @@
 ---
 name: toxis
 ip: 128.232.124.213
-fqdn: toxis.ocamllabs.io
-os: Ubuntu 22.04.4
+fqdn: toxis.caelum.ci.dev
+os: Ubuntu 22.04.5 LTS
 manufacturer: Dell
 model: PowerEdge R630
 serial: DLF0HL2

@@ -1,10 +1,10 @@
 ---
 name: laodoke
 ip: 128.232.124.239
-fqdn: laodoke.ocamllabs.io
+fqdn: laodoke.caelum.ci.dev
 manufacturer: Dell
 model: PowerEdge R630
-os: Ubuntu 22.04
+os: Ubuntu 24.04.3 LTS
 threads: 72
 location: Caelum
 notes: Cluster worker

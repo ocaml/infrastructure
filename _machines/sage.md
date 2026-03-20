@@ -1,18 +1,17 @@
 ---
-name: rosemary
-ip: 128.232.124.157
-fqdn: rosemary.caelum.ci.dev
-model: Supermicro
-os: FreeBSD 14.3-RELEASE-p4
+name: sage
+ip: 128.232.124.184
+fqdn: sage.caelum.ci.dev
+manufacturer: Supermicro
+os: Ubuntu 24.04.2 LTS
 threads: 40
 location: Caelum
-notes: FreeBSD worker
 processor: 'Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz'
-pool: freebsd-x86_64
 disks:
   - 1.7TB SSD
 latitude: 52.2109
 longitude: 0.0917
+notes: docs.ci (odoc 3)
 ---
 {% include details.html %} 
 

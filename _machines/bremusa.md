@@ -5,7 +5,7 @@ fqdn: bremusa.ocamllabs.io
 manufacturer: Dell
 model: PowerEdge R630
 serial: DLDZGL2
-os: Ubuntu 22.04.3 LTS
+os: Ubuntu 24.04.3 LTS
 threads: 72
 location: Caelum
 pool: linux-x86_64

@@ -4,7 +4,7 @@ ip: 163.172.166.101
 fqdn: watch.ocaml.org
 manufacturer: Scaleway
 model: SCW-GP1-XS
-os: Ubuntu 20.04.5
+os: Ubuntu 22.04.5 LTS
 threads: 4
 processor: 'AMD EPYC 7401P 24-Core Processor'
 memory: 16GB

@@ -4,7 +4,7 @@ ip: 128.232.124.241
 fqdn: okypous.ocamllabs.io
 manufacturer: Avantek
 model: Ampere(TM) Mt Snow
-os: Ubuntu 24.04
+os: Ubuntu 24.04.3 LTS
 threads: 80
 memory: 256GB
 processor: Ampere Altra Processor ARMv8

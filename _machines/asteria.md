@@ -1,10 +1,10 @@
 ---
 name: asteria
 ip: 128.232.124.191
-fqdn: asteria.ocamllabs.io
+fqdn: asteria.caelum.ci.dev
 manufacturer: Dell
 model: PowerEdge R6525
-os: Ubuntu 22.04
+os: Ubuntu 24.04.3 LTS
 threads: 256
 location: Caelum
 notes: Cluster worker

@@ -1,6 +1,6 @@
 ---
-name: riscv-bm-a4
-fqdn: riscv-bm-a4.sw.ocaml.org
+name: riscv-bm-01
+fqdn: riscv-bm-01.sw.ci.dev
 model: RV1
 processor: rv64imafdcvsu
 memory: 15GiB
@@ -11,7 +11,6 @@ disks:
 os: Ubuntu 24.04 LTS
 threads: 4
 location: Scaleway
-ssh: root@riscv-bm-a4
 use: RISCV worker
 pool: linux-riscv64
 latitude: 48.8591

@@ -8,7 +8,7 @@ manufacturer: Scaleway
 model: SCW-PRO2-XS
 processor: 'AMD EPYC 7543 32-Core Processor'
 threads: 4
-os: Ubuntu 22.04.1 LTS
+os: Ubuntu 22.04.5 LTS
 memory: 16GB
 disks:
   - 28GB

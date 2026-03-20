@@ -6,7 +6,7 @@ notes: OCaml on Windows Desktops
 threads: 128
 manufacturer: Dell
 model: PowerEdge R7425
-os: Ubuntu 22.04
+os: Ubuntu 22.04.4 LTS
 location: Caelum
 latitude: 52.2109
 longitude: 0.0917

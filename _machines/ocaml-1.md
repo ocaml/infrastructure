@@ -2,7 +2,7 @@
 name: ocaml-1
 ip: 140.211.11.97
 fqdn: ocaml-1.osuosl.ci.dev
-os: Ubuntu 24.04
+os: Ubuntu 24.04.2 LTS
 threads: 16
 memory: 32GB
 processor: ARMv8

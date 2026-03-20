@@ -2,7 +2,7 @@
 name: dev1
 ip: 212.47.237.247
 fqdn: dev1.ocamllabs.io
-os: Ubuntu 22.04.1
+os: Ubuntu 22.04.2 LTS
 notes: kit-ty-kate opam testing
 location: Scaleway
 model: VM

@@ -1,10 +1,10 @@
 ---
 name: iphito
 ip: 128.232.124.244
-fqdn: iphito.ocamllabs.io
+fqdn: iphito.caelum.ci.dev
 manufacturer: Dell
 model: PowerEdge R6525
-os: Ubuntu 22.04
+os: NixOS 25.11 (Xantusia)
 threads: 256
 location: Caelum
 notes: Cluster worker

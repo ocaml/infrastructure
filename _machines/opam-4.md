@@ -2,7 +2,7 @@
 name: opam-4
 fqdn: opam-4.ocaml.org
 ip: 51.158.232.133
-os: Ubuntu 22.04.1
+os: Ubuntu 22.04.5 LTS
 manufacturer: Scaleway
 model: VM
 threads: 2

@@ -1,14 +1,12 @@
 ---
-name: rosemary
-ip: 128.232.124.157
-fqdn: rosemary.caelum.ci.dev
-model: Supermicro
-os: FreeBSD 14.3-RELEASE-p4
+name: mint
+fqdn: mint.caelum.ci.dev
+ip: 128.232.124.158
+manufacturer: Supermicro
+os: Ubuntu 24.04.4 LTS
 threads: 40
 location: Caelum
-notes: FreeBSD worker
 processor: 'Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz'
-pool: freebsd-x86_64
 disks:
   - 1.7TB SSD
 latitude: 52.2109
