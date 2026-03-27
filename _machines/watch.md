@@ -1,20 +1,12 @@
 ---
 name: watch
-ip: 163.172.166.101
 fqdn: watch.ocaml.org
-manufacturer: Scaleway
-model: SCW-GP1-XS
+manufacturer: Xen Orchestra
 os: Ubuntu 22.04.5 LTS
-threads: 4
-processor: 'AMD EPYC 7401P 24-Core Processor'
-memory: 16GB
-location: Scaleway
-disks:
-  - 140GB virtual disk
 notes: PeerTube host at https://watch.ocaml.org
-location: Scaleway
-latitude: 48.8591
-longitude: 2.2935
+location: Cambridge Computer Laboratory
+latitude: 52.2109
+longitude: 0.0918
 ---
 {% include details.html %} 
 
