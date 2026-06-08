@@ -4,7 +4,7 @@ ip: 128.232.124.221
 fqdn: doris.caelum.ci.dev
 manufacturer: Dell
 model: PowerEdge R6525
-os: Ubuntu 24.04.3 LTS
+os: Ubuntu 26.04 LTS
 threads: 256
 location: Caelum
 notes: Cluster worker

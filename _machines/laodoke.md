@@ -4,7 +4,7 @@ ip: 128.232.124.239
 fqdn: laodoke.caelum.ci.dev
 manufacturer: Dell
 model: PowerEdge R630
-os: Ubuntu 24.04.3 LTS
+os: Ubuntu 26.04 LTS
 threads: 72
 location: Caelum
 notes: Cluster worker

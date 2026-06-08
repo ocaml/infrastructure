@@ -4,7 +4,7 @@ ip:
 fqdn: eumache.ocamllabs.io
 notes: docs.ci.ocaml.org and docs-data.ocaml.org
 location: Caelum
-os: Ubuntu 21.04
+os: Ubuntu 26.04 LTS
 serial: DLDXGL2
 manufacturer: Dell
 model: PowerEdge R630
