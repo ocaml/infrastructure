@@ -6,6 +6,7 @@ manufacturer: Supermicro
 os: Ubuntu 24.04.2 LTS
 threads: 40
 location: Caelum
+notes: Docker Swarm host for ocaml.ci.dev and ci.mirageos.org (mirage-ci, moved from Scaleway), plus the OCurrent deployers (mirage / tarides / base-images)
 processor: 'Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz'
 disks:
   - 59.6GB SSD
