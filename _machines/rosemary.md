@@ -3,7 +3,7 @@ name: rosemary
 ip: 128.232.124.157
 fqdn: rosemary.caelum.ci.dev
 model: Supermicro
-os: FreeBSD 14.3-RELEASE-p4
+os: FreeBSD 15.1-RELEASE
 threads: 40
 location: Caelum
 notes: FreeBSD worker
