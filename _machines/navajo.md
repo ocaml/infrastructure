@@ -6,13 +6,10 @@ manufacturer: Dell
 model: PowerEdge R7425
 processor: AMD EPYC 7551 32-Core Processor
 os: Ubuntu 22.04.4 LTS
+pool: linux-riscv64
 threads: 128
 location: Caelum
-use: benchmarking
-service: Sandmark Nightly
-notes: Benchmark Tooling Team.  Sandmark benchmarking.
 serial: 7NCSYQ2
-ssh: mte24@navajo.ocamllabs.io
 latitude: 52.2109
 longitude: 0.0917
 ---
